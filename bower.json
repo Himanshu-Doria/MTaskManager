@@ -1,0 +1,22 @@
+{
+  "name": "mtask-manager",
+  "description": "Small description for mtask-manager goes here",
+  "main": "",
+  "authors": [
+    "Himanshu-Doria <himanshu.doria@moldedbits.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1"
+  }
+}

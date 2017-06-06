@@ -2,14 +2,28 @@
 
 module.exports = function(environment) {
   var ENV = {
+    locationType: 'auto',
     modulePrefix: 'mtask-manager',
     environment: environment,
+    contentSecurityPolicy: {
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com",
+       'script-src': "'self' 'unsafe-eval' apis.google.com",
+       'frame-src': "'self' https://*.firebaseapp.com"
+    },
+    firebase: {
+      apiKey: "AIzaSyAw1jJ0_M9eFhaEYTLW5I3FOCbljfw6nfQ",
+      authDomain: "mtaskmanager.firebaseapp.com",
+      databaseURL: "https://mtaskmanager.firebaseio.com",
+      projectId: "mtaskmanager",
+      storageBucket: "mtaskmanager.appspot.com",
+      messagingSenderId: "378113531896"
+    },
     rootURL: '/',
-    locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+        LOG_STACKTRACE_ON_DEPRECATION: false
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
